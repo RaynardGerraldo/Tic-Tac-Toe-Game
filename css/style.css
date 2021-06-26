@@ -152,6 +152,7 @@ body {
   color: rgb(111, 184, 17)
 }
 
+
 @media only screen and (max-width: 750px) {
   .wrapper {
     flex-direction: column;
