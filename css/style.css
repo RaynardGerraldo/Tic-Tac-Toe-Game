@@ -29,13 +29,17 @@ body {
 
 
 .github {
+  width: 220px;
+  height: 50px;
   display: flex;
   justify-content: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  margin-top: 30px;
 }
+
 .github img {
   align-self: flex-end;
 }
