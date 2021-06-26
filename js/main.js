@@ -18,7 +18,7 @@ tiles.forEach(tile => {
 function onTileClick(i) {
   game.makeMove(i);
   gameView.updateBoard(game);
-  new Audio('/js/click.mp3').play();
+  new Audio('js/click.mp3').play();
 }
 
 function onRestartClick() {
