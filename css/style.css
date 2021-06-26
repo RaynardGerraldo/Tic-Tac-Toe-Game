@@ -5,7 +5,13 @@
 
 body {
   font-family: 'Merriweather Sans', sans-serif;
-  color: #4c6986;
+  color: white;
+  background-image:url('bgimage2.jpg');
+  background-size:100%;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  height:100%;
+  width:100%;
 }
 
 .title {
@@ -22,6 +28,19 @@ body {
   justify-content: space-between;
 }
 
+
+.github {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.github img {
+  align-self: flex-end;
+}
+
 .h1 {
   font-size: 70px;
   font-weight: bold;
@@ -34,7 +53,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  border: 2px solid #4c6986;
+  border: 2px solid black;
   transition: all 0.2s ease;
   cursor: pointer;
   font-weight: bold;
@@ -95,7 +114,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 80px;
-  background: white;
+  background: rgba(0, 0, 0, 0.493);
   transition: all 0.2s ease;
   cursor: pointer;
 }
@@ -120,8 +139,13 @@ body {
   color: #d7bafb;
 }
 
-.tile-winner {
-  color: #23ce6b;
+.tile-winner span{
+  display: none;
+}
+
+.tile-winner:after{
+  content: "Win";
+  color: rgb(111, 184, 17)
 }
 
 @media only screen and (max-width: 1200px) {
